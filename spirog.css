@@ -1,0 +1,89 @@
+body {
+    width : 100vw;
+    height : 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    color : #444;
+    background-color : #FAFAFA;
+}
+
+.infolabel {
+    position : absolute;
+    width : 100%;
+    text-align: center;
+}
+
+.labelholder {
+    margin-top : 64px;
+    width : 100%;
+}
+
+.formula {
+    width : 100%;
+    text-align : center;
+    z-index : 100;
+}
+
+#graphside {
+    height : 90%;
+    width : 34%;
+    float : left;
+    position : relative;
+}
+
+canvas {
+    width : 100%;
+    height : 70%;
+    bottom : 64px;
+    position: absolute;
+    left:0px;
+}
+
+#overlay {
+    z-index : 3;
+}
+
+#maingraph {
+    z-index : 1;
+}
+
+#clearbutton {
+    z-index : 5;
+    position : absolute;
+    left : 16px;
+    bottom : 4px;
+}
+
+#importbutton {
+    z-index : 5;
+    position : absolute;
+    right : 16px;
+    bottom : 4px;
+}
+
+.termspanel {
+    width : 33%;
+    float : left;
+    height : 100%;
+    text-align : center;
+}
+
+.termTemplate {
+    display : none;
+}
+
+ul {
+    list-style:none;
+}
+
+#graphInput {
+    position : absolute;
+    width : 100%;
+    bottom : 32px;
+    z-index : 4;
+    text-align : center;
+}
+
+li input {
+    width : 40px;
+    text-align : center;
+}

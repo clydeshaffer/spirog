@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Spirog - Multi Sine Term Parametric Plotter</title>
+    <script type="text/javascript">
+            document.write("\<script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'>\<\/script>");
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel=stylesheet' type='text/css'>
+    <link rel='stylesheet' type='text/css' href='spirog.css'>
+    <script src="spirog.js"></script>
+</head>
+<body>
+    <div id='leftside' class='termspanel'>
+        X terms
+        <ul id="xList">
+        </ul>
+        <button id="addX">+</button>
+    </div>
+    <div id='graphside'>
+        <canvas id='maingraph'></canvas>
+        <canvas id='overlay'></canvas>
+        <button id='clearbutton'>clear the graph</button>
+        <button id='importbutton' title='paste and load a previous JSON output'>import</button>
+        <input type="text" id='graphInput'/>
+        <p class="infolabel">t is in seconds, X and Y in pixels</p>
+        <div class="labelholder">
+            <p class="formula" id="xlabel"></p>
+            <p class="formula" id="ylabel"></p>
+        </div>
+    </div>
+    <div id='rightside' class='termspanel'>
+        Y terms
+        <ul id="yList">
+        </ul>
+        <button id="addY">+</button>
+    </div>
+</body>
+
+<li class="termTemplate">
+    <button class="remove"></button>
+    <input type="text" value="1" class="rad"/>
+    <span class="func">
+        Sin
+    </span>
+    (
+    <input type="text" value="1" class="m"/>t + <input type="text" value="0" class="b"/>
+    )
+</div>
